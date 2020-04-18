@@ -20,7 +20,14 @@ const calculator = ( state = initialAppState, action) => {
             resultValue: state.resultValue + state.inputValue,
             showingResult: true,
         };
-    } else {
+    } else if (action.type === actionTypes.EQUAL) {
+        return {
+            ...state,
+            inputValue: 0,
+            resultValue: state.resultValue + state.inputValue,
+            showingResult: true,
+        }
+    }else {
         return state;
     }
 };

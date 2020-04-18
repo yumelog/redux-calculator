@@ -9,3 +9,6 @@ export const onPlusClick = () => ({
     type: actionTypes.PLUS,
 });
 
+export const onEqualClick = () => ({
+    type: actionTypes.EQUAL,
+});
