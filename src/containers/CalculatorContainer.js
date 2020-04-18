@@ -7,6 +7,7 @@ import NumBtn from '../components/NumBtn';
 import PlusBtn from '../components/PlusBtn';
 import Result from '../components/Result';
 import EqualBtn from '../components/EqualBtn';
+import ClearBtn from '../components/ClearBtn';
 
 class CalculatorContainer extends Component {
     render(){
@@ -34,6 +35,7 @@ class CalculatorContainer extends Component {
                     <EqualBtn onClick={actions.onEqualClick} />
                </div>
                <div>
+                    <ClearBtn onClick={actions.onClearClick} />
                     <Result result={calculator.showingResult ? calculator.resultValue : calculator.inputValue}/>
                </div>
             </div>

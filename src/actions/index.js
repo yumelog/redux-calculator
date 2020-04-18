@@ -12,3 +12,7 @@ export const onPlusClick = () => ({
 export const onEqualClick = () => ({
     type: actionTypes.EQUAL,
 });
+
+export const onClearClick = () => ({
+    type: actionTypes.CLEAR,
+});
